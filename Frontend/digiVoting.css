@@ -13,6 +13,29 @@ body {
     line-height: 1.6;
 }
 
+/* Styling the Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    background-color: #f9f9f9; /* Light gray background for the header */
+}
+
+.logo-container img {
+    height: 70px; /* Adjust logo size */
+    width: auto;
+}
+
+.logo-container h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
 /* Navigation Bar */
 nav {
     display: flex;
