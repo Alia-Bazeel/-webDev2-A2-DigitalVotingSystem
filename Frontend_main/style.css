@@ -1,0 +1,278 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Erica+One&family=Handlee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Londrina+Solid:wght@100;300;400;900&family=Protest+Guerrilla&family=Sniglet:wght@400;800&family=Teko:wght@300..700&family=Wendy+One&display=swap');
+                       /* Headings and buttons --> font-family: "Lilita One", serif; */
+                       /* All other text --> font-family: "Lato", sans-serif; */
+
+h1, h2, h3, h4, h5, h6, button {font-family: "Lilita One", serif;}
+p, a {font-family: "Lato", sans-serif;}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fixed Header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d7c2a9;
+    color: #d0670a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    height: 150px;
+    width: auto;
+}
+
+/* Header Title */
+.heading {
+    text-align: center;
+    flex: 1;
+}
+
+.heading h1 {font-size: 7em;}
+
+.heading h4 {
+    font-size: 3em;
+    color: #724e2c;
+}
+
+/* Navigation Menu */
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Dashboard Widget */
+.dashboard-widget {
+    position: relative; /* Required for dropdown positioning */
+}
+
+.dashboard-icon {
+    font-size: 2em;
+    cursor: pointer;
+    color: #184B55;
+    background-color: #d7c2a9;
+    border: #d7c2a9;
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 2.5em; /* Position below the icon */
+    left: 0;
+    background-color: #3CB5CA;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu .nav-link:hover {
+    color: #D0670A;
+}
+
+/* Sign In/Sign Up Links */
+.auth-links {
+    margin-left: 20px;
+}
+
+.auth-links .nav-link {
+    text-decoration: none;
+    color: #184B55;
+    font-size: 1.2em;
+}
+
+.auth-links .nav-link:hover {
+    color: #D0670A;
+}
+
+
+/* Home Section */
+#Home {
+    background-image: url('images/home-bg.jpg');
+    background-size: cover; /* Cover the section */
+    background-position: center; /* Center image */
+    color: #fff; /* Text color */
+    background-color: transparent; 
+    display: flex; /* Center content vertically and horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Reduced height */
+    margin: 0 auto; /* Center horizontally */
+    padding-top: 200px; /* Adjust to match the height of the header */
+    box-sizing: border-box; /* Include padding/margin in calculations */
+    position: relative;
+    z-index: 0;
+}
+
+.home-sec {
+    text-align: center; 
+    padding: 20px;
+    padding-left: 325px;
+}
+
+.home-text {
+    max-width: 425px; /* Reduce content width */
+    padding: 15px;
+    border-radius: 10px;
+    height: 200px;
+    padding-top: -20px;
+}
+
+.home-text h2 {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    font-size: 1em; /* Slightly smaller font size */
+    text-align: left;
+}
+
+
+/* About Section */
+#About {
+    background-image: url(images/abtUs-bg.jpg);
+    background-size: cover; /* Cover the section */
+    background-position: center; /* Center image */
+    color: #000; /* Dark gray text */ 
+    display: flex; /* Center content vertically and horizontally */
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 0; /* Ensure corners are square */
+    height: 83vh;
+}
+
+.about-sec {
+    max-width: 900px; /* Centered and limited width */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 780px;
+    padding: 15px;
+}
+
+.about-text h2 {
+    text-align: center;
+    font-size: 3.5em;
+    color: #184B55; /* Navy Blue */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about-text b {
+    font-family: "Lilita One", serif; /* Matching Heading Font */
+}
+
+/* Entertainment Section Styling */
+#Entertainment {
+    background-image: url(images/entertain-bg.png);
+    background-size: cover; /* Cover the section */
+    background-position: center; /* Center image */
+    max-width: 100%;
+    border-radius: 0; /* Ensure corners are square */
+    display: flex; /* Center content vertically and horizontally */
+    flex-direction: column;
+    justify-content: center;
+    height: 83vh;
+}
+
+.entertain-sec {
+    padding: 20px; /* Add space inside the section */
+    text-align: center; /* Center align text */
+    margin: 0 auto;
+}
+
+.entertain-sec h2 {
+    color: #724e2c; /* Navy Blue for contrast */
+    font-size: 3.5em; /* Slightly larger font size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.entertain-list ul { /* List Container Styling */
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.entertain-list li { /* Individual List Item Styling */
+    margin: 10px 0; /* Space between list items */
+}
+
+.entertain-list a { /* Link Styling */
+    text-decoration: none; /* Remove underline */
+    color: #D0670A; /* Orange for links */
+    font-size: 1.75em;
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+.entertain-list a:hover { /* Hover Effect for Links */
+    color: #3CB5CA; /* Light Blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+footer {
+    background-color: #042e55;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .heading h1 {font-size: 4em;}
+    .heading h4 {font-size: 1.5em;}
+    .logo {height: 100px;}
+    .fixed-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .header-nav li {margin: 5px 0;}
+    .about-text h2 {font-size: 2em;}
+    .about-text p {font-size: 1em;}
+}
+

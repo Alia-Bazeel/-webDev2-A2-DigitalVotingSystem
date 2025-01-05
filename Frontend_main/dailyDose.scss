@@ -1,0 +1,29 @@
+$light-blue: #3cb5ca;
+$orange: #d0670a;
+$navy-blue: #184b55;
+$cream: #d7c2a9;
+$brown: #724e2c;
+$rgba: rgba(0, 0, 0, 0.1);
+$white: white;
+
+
+
+.fixed-header {
+    color: $orange;
+    background-color: $cream;
+    box-shadow: 0 4px 6px $rgba;
+}
+.heading h4{color: $brown;}
+.dashboard-icon {color: $navy-blue;}
+.dropdown-menu {
+    color: $light-blue;
+    box-shadow: 0 4px 6px $rgba;
+}
+.dropdown-menu .nav-link {color: $white; /* White for dropdown links */}
+.dropdown-menu .nav-link:hover {color: $Orange;}
+.auth-links .nav-link {color: $navy-blue;}
+.auth-links .nav-link:hover {color: $Orange;}
+/*home section*/
+.home-sec {color: $white;}
+
+
