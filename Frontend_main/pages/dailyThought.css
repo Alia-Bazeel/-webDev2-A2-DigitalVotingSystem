@@ -52,10 +52,32 @@ p, a {font-family: "Lato", sans-serif;}
     color: #724e2c;
 }
 
+/* Main content should take up the available space */
+main {
+    flex: 1;
+    padding-top: 150px;
+}
+
+/* Intro Paragraph */
+#intro-para {
+    text-align: center;
+    margin: 20px auto 30px;
+    padding: 15px;
+    max-width: 700px;
+    background-color: #fef8f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#intro-para p {
+    font-size: 1.2em;
+    color: #333;
+}
+
 /* Thought Section */
 .thought-section {
     text-align: center;
-    margin: 100px auto;
+    margin: 30px auto 60px;
     padding: 20px;
     background-color: #f9f5f0;
     border: 1px solid #ddd;
@@ -95,6 +117,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
 }
 
 /* Responsive Styling */
