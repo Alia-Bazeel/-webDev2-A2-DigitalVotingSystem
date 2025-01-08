@@ -4,8 +4,10 @@ $navy-blue: #184b55;
 $cream: #d7c2a9;
 $brown: #724e2c;
 $rgba: rgba(0, 0, 0, 0.1);
-$white: white;
-
+$white: #fff;
+$black: #000;
+$grey: #ccc;
+$dark-blue: #042e55;
 
 
 .fixed-header {
@@ -14,16 +16,54 @@ $white: white;
     box-shadow: 0 4px 6px $rgba;
 }
 .heading h4{color: $brown;}
-.dashboard-icon {color: $navy-blue;}
+.dashboard-icon {
+    color: $navy-blue;
+    background-color: $cream;
+    border: $cream;
+}
 .dropdown-menu {
-    color: $light-blue;
+    background-color: $light-blue;
     box-shadow: 0 4px 6px $rgba;
 }
-.dropdown-menu .nav-link {color: $white; /* White for dropdown links */}
-.dropdown-menu .nav-link:hover {color: $Orange;}
-.auth-links .nav-link {color: $navy-blue;}
-.auth-links .nav-link:hover {color: $Orange;}
-/*home section*/
+.dropdown-menu .nav-link {
+    color: $white; /* White for dropdown links */
+    transition: color 0.3s ease;
+}
+.dropdown-menu .nav-link:hover {color: $orange;}
+.auth-link .nav-link {color: $navy-blue;}
+.auth-link .nav-link:hover {color: $orange;}
+
+/*Home Section*/
 .home-sec {color: $white;}
 
+/* About Section */
+#About {color: $black;}
+.about-sec {box-shadow: 0 4px 8px $rgba;}
+.about-text h2 {color: $navy-blue;}
 
+/* Entertainment Section */
+.entertain-sec h2 {color: $brown;}
+.entertain-list li {
+    background: $white;
+    border: 2px solid $grey;
+}
+.entertain-list a {
+    color: $orange;
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+.entertain-list a:hover {color: $light-blue;}
+
+/* Contact Us Section */
+#Contact {color: $white;}
+#Contact h2 {color: $navy-blue;}
+.contact-details {color: $dark-blue;}
+.contact-details a {color: $brown;}
+.fa-facebook {color: $white;}
+.fa-instagram {color: $white;}
+.fa-twitter {color: $white;}
+
+/* Footer Section */
+footer {
+    background-color: $dark-blue;
+    color: $white;
+}
