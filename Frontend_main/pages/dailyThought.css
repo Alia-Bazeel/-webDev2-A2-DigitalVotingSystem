@@ -13,6 +13,18 @@ p, a {font-family: "Lato", sans-serif;}
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Flexbox layout for the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+}
+
 /* Fixed Header */
 .fixed-header {
     position: fixed;

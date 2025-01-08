@@ -89,7 +89,7 @@ main {
 /* Joke Container */
 #joke-container {
     text-align: center;
-    margin: 30px auto 50px; /* Reduced margin-top to 10px */
+    margin: 30px auto 50px; /* Reduced margin-top */
     padding: 20px;
     max-width: 600px;
     border: 2px solid #d0670a;

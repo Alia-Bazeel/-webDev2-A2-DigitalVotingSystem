@@ -1,4 +1,4 @@
-// Fetch a random Kanye West quote
+// Fetching a random Kanye West quote
 async function getThought() {
     try {
         const response = await fetch('https://api.kanye.rest');

@@ -13,6 +13,18 @@ p, a {font-family: "Lato", sans-serif;}
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Flexbox layout for the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+}
+
 /* Fixed Header */
 .fixed-header {
     position: fixed;
@@ -52,11 +64,64 @@ p, a {font-family: "Lato", sans-serif;}
     color: #724e2c;
 }
 
+/* Main content should take up the available space */
+main {
+    flex: 1;
+    padding-top: 150px;
+}
+
+/* Intro Paragraph */
+#intro-para {
+    text-align: center;
+    margin: 20px auto 20px;
+    padding: 15px;
+    max-width: 700px;
+    background-color: #fef8f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#intro-para p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#fact-content {
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 700px;
+    background-color: #fef8f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#fact-text {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#new-fact-btn {
+    padding: 10px 20px;
+    background-color: #d0670a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#new-fact-btn:hover {
+    background-color: #c0560a;
+}
+
 footer {
     background-color: #042e55;
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
 }
 
 /* Responsive Styling */

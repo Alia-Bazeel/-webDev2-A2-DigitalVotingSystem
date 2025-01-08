@@ -97,18 +97,18 @@ p, a {font-family: "Lato", sans-serif;}
     color: #D0670A;
 }
 
-/* Sign In/Sign Up Links */
-.auth-links {
+/* Sign In/Sign Up Link */
+.auth-link {
     margin-left: 20px;
 }
 
-.auth-links .nav-link {
+.auth-link .nav-link {
     text-decoration: none;
     color: #184B55;
     font-size: 1.2em;
 }
 
-.auth-links .nav-link:hover {
+.auth-link .nav-link:hover {
     color: #D0670A;
 }
 
