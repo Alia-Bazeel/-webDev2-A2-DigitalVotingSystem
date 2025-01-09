@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #3CB5CA, #184B55); /* Gradient Background */
+    background: linear-gradient(to right, #3CB5CA, #184B55);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,36 +41,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Toggle Buttons */
-.toggle-buttons {
-    margin-bottom: 20px;
-}
-
-.toggle-buttons button {
-    background-color: #3CB5CA;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.toggle-buttons button.active {
-    background-color: #D0670A;
-}
-
 /* Forms Styling */
-.form {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.form.active {
-    display: flex;
-}
-
 .form h2 {
     margin-bottom: 10px;
     color: #184B55;
@@ -81,6 +52,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
+    margin-bottom: 10px;
+    width: calc(100% - 20px); /* Account for padding */
 }
 
 .form button {
@@ -90,6 +63,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 .form button:hover {
@@ -102,7 +76,12 @@ body {
     font-size: 0.9em;
 }
 
-.switch-text span {
+.switch-text a {
     color: #D0670A;
-    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
 }
