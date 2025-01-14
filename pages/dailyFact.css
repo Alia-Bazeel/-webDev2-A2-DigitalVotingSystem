@@ -125,16 +125,81 @@ footer {
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
-    .heading {
-        flex-direction: column; /* Stack vertically on smaller screens */
-        text-align: center;
+
+/* Tablet Styling (min-width: 720px and max-width: 1023px) */
+@media (min-width: 720px) and (max-width: 1023px) {
+    * {box-sizing: border-box;}
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
-    .heading h1 {font-size: 4em;}
-    .heading h4 {font-size: 1.5em;}
-    .logo {height: 75px;}
     .fixed-header {
-        flex-direction: column;
+        flex-direction: row;
+        padding: 5px 5px;
+        width: 100%; /* Reduced header width */
+        margin: 0 auto; /* Centered header */ 
+        gap: 5px;
+    }
+    .logo {height: 150px; /* Smaller logo height */}
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-left: 100px;
+    }
+    .heading h1 {font-size: 2.5em; /* Reduced font size */}
+    .heading h4 {font-size: 1.75em; /* Smaller subheading */}
+    #intro-para p {font-size: 1.75em;}
+    #fact-text {font-size: 1.75em;}
+    #new-fact-btn {font-size: 1.5;}
+    footer {  /*FOOTER SECTION*/
+        max-width: 135%;
+        width: 500%;
+        font-size: 1em;
+        padding-left: 0;
         text-align: center;
+        color: white;
+        padding: 15px;
+        margin-top: auto; /* Pushes footer to the bottom of the page */
+    }
+}
+
+/* Mobile Styling (max-width: 719px) */
+@media (max-width: 719px) {
+    * {box-sizing: border-box;}
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .fixed-header {
+        flex-direction: row;
+        padding: 5px 5px;
+        width: 100%; /* Reduced header width */
+        margin: 0 auto; /* Centered header */
+        gap: 5px;
+    }
+    .logo {height: 70px; /* Smaller logo height */}
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding-left: 100px;
+    }
+    .heading h1 {font-size: 1.75em; /* Reduced font size */}
+    .heading h4 {font-size: 0.75em; /* Smaller subheading */}
+    #intro-para p {font-size: 1.5em;}
+    #fact-text {font-size: 1.75em;}
+    #new-fact-btn {font-size: 1.5;}
+    footer {  /*FOOTER SECTION*/
+        max-width: 135%;
+        width: 500%;
+        font-size: 0.75em;
+        text-align: center;
+        color: white;
+        padding: 15px;
+        padding-right: 20px;
+        margin-top: auto; /* Pushes footer to the bottom of the page */
     }
 }
