@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyThought-Daily Dose</title>
+    <link rel="stylesheet" href="dailyThought.css"> <!-- linking the css file -->
+</head>
+<body>
+
+    <header class="fixed-header">
+        <img src="images/Logo.png" alt="Logo for DailyDose" class="logo"> <!-- Logo -->
+        <div class="heading">                                             <!-- title & tagline -->
+            <h1> Daily Dose </h1>
+            <h4> Daily Entertainments </h4>
+        </div>      
+    </header>
+
+    <!-- Random Thought Section -->
+    <main>
+        <section id="intro-para">
+            <p>Welcome to Daily Dose! Continue your day with an inspiring thought. Here's a random thought to spark your mind. Click the button to discover another thought and uplift your spirit!</p>
+        </section>
+        <section class="thought-section">
+            <h2>💭 Thought of the Day</h2>
+            <p id="thought">Loading...</p>
+            <button onclick="getThought()">Get New Thought</button>
+        </section>
+    </main> 
+
+    <footer>
+        <p> <i>AliaBazeel</i> &copy; 2025 DailyDose. All rights reserved. </p>
+    </footer>
+    
+    <script defer src="dailyThought.js"></script> <!-- linking JavaScript -->
+</body>
+</html>
