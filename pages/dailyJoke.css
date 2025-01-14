@@ -1,0 +1,156 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Erica+One&family=Handlee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Londrina+Solid:wght@100;300;400;900&family=Protest+Guerrilla&family=Sniglet:wght@400;800&family=Teko:wght@300..700&family=Wendy+One&display=swap');
+                       /* Headings and buttons --> font-family: "Lilita One", serif; */
+                       /* All other text --> font-family: "Lato", sans-serif; */
+
+h1, h2, h3, h4, h5, h6, button {font-family: "Lilita One", serif;}
+p, a {font-family: "Lato", sans-serif;}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Flexbox layout for the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+}
+
+/* Fixed Header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d7c2a9;
+    color: #d0670a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+/* Header Title */
+.heading {
+    display: flex; /* Use Flexbox */
+    align-items: center;
+    gap: 250px; /* Add some space between h1 and h4 */
+    text-align: left;
+    flex: 1;
+    padding-left: 450px;
+}
+
+.heading h1 {font-size: 3.5em;}
+
+.heading h4 {
+    font-size: 1.5em;
+    color: #724e2c;
+}
+
+/* Main content should take up the available space */
+main {
+    flex: 1;
+    padding-top: 150px;
+}
+
+/* Intro Paragraph */
+#intro-para {
+    text-align: center;
+    margin: 20px auto 20px;
+    padding: 15px;
+    max-width: 700px;
+    background-color: #fef8f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#intro-para p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Joke Container */
+#joke-container {
+    text-align: center;
+    margin: 30px auto 50px; /* Reduced margin-top */
+    padding: 20px;
+    max-width: 600px;
+    border: 2px solid #d0670a;
+    border-radius: 10px;
+    background-color: #fef8f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#joke-container h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #d0670a;
+}
+
+#joke-setup {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#joke-punchline {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #724e2c;
+}
+
+#new-joke-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: "Lilita One", serif;
+    color: white;
+    background-color: #d0670a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-joke-btn:hover {
+    background-color: #b35608;
+}
+
+footer {
+    background-color: #042e55;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .heading {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        text-align: center;
+    }
+    .heading h1 {font-size: 4em;}
+    .heading h4 {font-size: 1.5em;}
+    .logo {height: 75px;}
+    .fixed-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
