@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('User signed in:', result);
 
                 // Redirect user to the home page or dashboard after successful sign-in
-                window.location.href = 'dailyDose.html'; // Replace with your actual home URL
+                window.location.href = 'index.html'; // Replace with your actual home URL
             } else {
                 const errorData = await response.json();
                 console.error('Error:', errorData.message);
